@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Noobic Stratocracy — Official</title>
+  <meta name="description" content="Noobic Stratocracy — military community site: history, divisions, ranks, events, gallery and rules." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom accents and utilities */
+    :root{
+      --blue: #1752b8;
+      --yellow: #ffe033;
+      --green: #1a8a3a;
+      --muted:#9aa5a1;
+      --bg:#0b0d0e;
+    }
+    body{
+      background: #1a8a3a;
+    }
+    header {
+      background: linear-gradient(90deg, var(--blue) 0%, var(--yellow) 60%, var(--green) 100%);
+      box-shadow: 0 2px 12px 0 rgba(0,0,0,0.12);
+      border-bottom: 3px solid var(--yellow);
+    }
+    .accent{
+      background: linear-gradient(90deg, var(--yellow), #ffe96a);
+      color: #1752b8;
+    }
+    .card-bg{
+      background:rgba(255,255,255,0.10);
+      backdrop-filter:blur(4px);
+      border: 1px solid var(--blue);
+    }
+    .insignia{width:48px;height:48px;display:inline-block}
+    .btn-main {
+      background: var(--yellow);
+      color: var(--blue);
+      font-weight: bold;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      box-shadow: 0 2px 8px 0 rgba(23,82,184,0.10);
+      transition: transform 0.2s;
+    }
+    .btn-main:hover {
+      background: var(--green);
+      color: #fff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="text-slate-100 antialiased">
+  <header class="fixed w-full z-40 top-0 left-0">
+    <nav class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/bandera.png" alt="Noobic Stratocracy Flag" class="w-10 h-10 rounded-md object-cover border border-yellow-400" />
+        <div class="text-sm">
+          <div class="font-bold uppercase text-lg tracking-wider">Noobic Stratocracy</div>
+          <div class="text-xs text-gray-400">Official Community Portal</div>
+        </div>
+      </a>
+      <ul class="hidden md:flex gap-6 items-center text-sm text-gray-100 font-semibold">
+        <li><a href="manual.html" class="hover:text-yellow-300">Manual</a></li>
+        <li><a href="intro.html" class="hover:text-yellow-300">Introduction</a></li>
+        <li><a href="rules.html" class="hover:text-yellow-300">Rules</a></li>
+        <li><a href="uniforms.html" class="hover:text-yellow-300">Uniforms</a></li>
+        <li><a href="divisions.html" class="hover:text-yellow-300">Divisions</a></li>
+        <li><a href="vocab.html" class="hover:text-yellow-300">Vocabulary</a></li>
+        <li><a href="ranks.html" class="hover:text-yellow-300">Ranks</a></li>
+        <li><a href="faq.html" class="hover:text-yellow-300">FAQ</a></li>
+      </ul>
+      <button id="mobile-toggle" class="md:hidden p-2 rounded border border-yellow-400 text-yellow-400">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden bg-green-900/95 border-t border-yellow-400 md:hidden">
+      <div class="px-6 py-4 flex flex-col gap-3 text-yellow-200 font-semibold">
+        <a href="manual.html">Manual</a>
+        <a href="intro.html">Introduction</a>
+        <a href="rules.html">Rules</a>
+        <a href="uniforms.html">Uniforms</a>
+        <a href="divisions.html">Divisions</a>
+        <a href="vocab.html">Vocabulary</a>
+        <a href="ranks.html">Ranks</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="pt-20">
+    <section class="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-blue-900 via-green-900 to-yellow-200 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-[url('images/bandera.png')] bg-center bg-no-repeat bg-contain pointer-events-none"></div>
+      <div class="max-w-3xl mx-auto px-6 py-16 text-center relative z-10">
+        <img src="images/bandera.png" alt="Noobic Stratocracy Flag" class="mx-auto mb-6 w-32 h-32 rounded-lg border-4 border-yellow-400 shadow-lg" />
+        <h1 class="text-5xl font-extrabold uppercase tracking-widest mb-4 text-yellow-300 drop-shadow">Noobic Stratocracy</h1>
+        <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">Welcome to the official portal of the Noobic Stratocracy. Explore our divisions, ranks, rules, and community history. This site is your gateway to all things Noobia — discipline, tradition, and unity.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+          <a href="manual.html" class="btn-main text-lg">Infantryman's Manual</a>
+          <a href="divisions.html" class="btn-main text-lg">Divisions</a>
+          <a href="faq.html" class="btn-main text-lg">FAQ</a>
+        </div>
+        <div class="mt-10 flex flex-wrap justify-center gap-8 text-yellow-200 text-lg font-semibold">
+          <div><span class="text-3xl font-bold text-yellow-300">40k+</span> Members</div>
+          <div><span class="text-3xl font-bold text-yellow-300">2015</span> Founded</div>
+          <div><span class="text-3xl font-bold text-yellow-300">Novis Bellum</span> Capital</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-2">
+          <h2 class="text-2xl font-bold">About the Stratocracy</h2>
+          <p class="mt-4 text-gray-300 leading-relaxed">The Noobic Stratocracy — also known as East Noobia — occupies the eastern half of Noobia after a coup and the Bloxian invasion. As a stratocracy, the military is the state: institutions, law, and leadership are shaped by uniformed command. The nation maintains large armed forces, naval power, and a near-fanatical patriotism among its people. The country pursues the War of Reunification against the western Federal Republic of Noobia.</p>
+
+          <h3 class="mt-6 font-semibold">History at a glance</h3>
+          <ul class="mt-3 text-gray-300 list-disc pl-5 space-y-2">
+            <li>Founded as a revival of the 3rd Noob Division (original group from 2015)</li>
+            <li>Experienced multiple shutdowns and revivals; reorganized into a stratocracy in 2025</li>
+            <li>Strong focus on lore, worldbuilding, and community-driven operations</li>
+          </ul>
+        </div>
+
+        <aside class="card-bg p-4 rounded-lg">
+          <h4 class="font-semibold">Contact</h4>
+          <p class="text-sm text-gray-300 mt-2">Email: placeholder@placeholder.placeholder</p>
+          <p class="text-sm text-gray-300">Discord: dipstick. — <a class="text-amber-400" href="#">discord.gg/noobia</a></p>
+          <div class="mt-4">
+            <h5 class="text-xs uppercase text-gray-400">Roblox Groups</h5>
+            <ul class="text-sm mt-2 text-gray-300 space-y-1">
+              <li>Main Group</li>
+              <li>3rd Noob Division</li>
+              <li>2nd Noob Division</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="divisions" class="max-w-6xl mx-auto px-6 py-8">
+      <h2 class="text-2xl font-bold">Divisions</h2>
+      <p class="text-gray-400 mt-2">Each division serves a distinct role within the Stratocracy.</p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">1NF — Noobic Fleet</h4>
+          <div class="text-xs text-gray-400">Naval branch; includes Naval Air Corps & Marine Corps</div>
+          <p class="mt-3 text-sm text-gray-300">Primary naval operations, fleet logistics, and maritime combat. Overseen by the Grand Admiral.</p>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">NOOBSOC — Special Operations</h4>
+          <div class="text-xs text-gray-400">Elite operators for specialised missions</div>
+          <p class="mt-3 text-sm text-gray-300">Small, highly skilled units focusing on precision engagements and advanced systems.</p>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">NAC — Armored Corps</h4>
+          <div class="text-xs text-gray-400">Armour and vehicular combat</div>
+          <p class="mt-3 text-sm text-gray-300">Tanks, armoured vehicles, and mechanized support units.</p>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">NTC — Training Command</h4>
+          <div class="text-xs text-gray-400">Recruiting & training of enlisted personnel</div>
+          <p class="mt-3 text-sm text-gray-300">Handles education, basic training, and specialist courses.</p>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">SMP — Military Police</h4>
+          <div class="text-xs text-gray-400">Law enforcement & discipline</div>
+          <p class="mt-3 text-sm text-gray-300">Maintains order in service and implements Stratocracy regulations.</p>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">GSMC — Medical Corps</h4>
+          <div class="text-xs text-gray-400">Battlefield medical support</div>
+          <p class="mt-3 text-sm text-gray-300">Medical teams, triage, and roleplay medical services.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ranks" class="max-w-6xl mx-auto px-6 py-8">
+      <h2 class="text-2xl font-bold">Ranks</h2>
+      <p class="text-gray-400 mt-2">From new enlistees to the General, the Stratocracy has a clear chain of command.</p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">Enlisted</h4>
+          <ul class="mt-3 text-sm text-gray-300 list-disc pl-5">
+            <li>Enlisted</li>
+            <li>Infantryman</li>
+            <li>Senior Infantryman</li>
+            <li>Specialist</li>
+            <li>Corporal</li>
+          </ul>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">Non-Commissioned Officers</h4>
+          <ul class="mt-3 text-sm text-gray-300 list-disc pl-5">
+            <li>Squad Sergeant</li>
+            <li>Platoon Sergeant</li>
+            <li>Company Sergeant</li>
+            <li>Command Sergeant</li>
+            <li>Chief Command Sergeant</li>
+          </ul>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">Commissioned & NOOBCOM</h4>
+          <ul class="mt-3 text-sm text-gray-300 list-disc pl-5">
+            <li>Lieutenant</li>
+            <li>Captain</li>
+            <li>Major</li>
+            <li>Colonel</li>
+            <li>Adjutant Staff</li>
+            <li>General Staff</li>
+            <li>Lieutenant General</li>
+            <li>General</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 text-sm text-gray-400">Promotions are based on merit, activity, time in service, and recommendations from NCOs or Officers.</div>
+    </section>
+
+    <section id="operations" class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold">Operations & Events</h2>
+        <a href="#events" class="text-sm text-amber-400">See full schedule →</a>
+      </div>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">Defensive Training</h4>
+          <p class="mt-2 text-sm text-gray-300">Regular scrimmages to improve unit cohesion and tactics across land, sea and air.</p>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">Raids</h4>
+          <p class="mt-2 text-sm text-gray-300">Coordinated operations across various game maps to demonstrate capability.</p>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">Clan Battles</h4>
+          <p class="mt-2 text-sm text-gray-300">Large-scale engagements against rival groups.</p>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">Lore Events</h4>
+          <p class="mt-2 text-sm text-gray-300">Interactive story-driven events expanding the Noobian universe.</p>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">Noobfrost</h4>
+          <p class="mt-2 text-sm text-gray-300">A permadeath roleplay set in a frozen post-apocalyptic map.</p>
+        </div>
+        <div class="p-4 rounded-lg card-bg">
+          <h4 class="font-semibold">Contests</h4>
+          <p class="mt-2 text-sm text-gray-300">Art, banners and creative contests for community rewards.</p>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <h3 class="font-semibold">Battle Record</h3>
+        <div class="mt-4 relative">
+          <div id="carousel" class="rounded-lg overflow-hidden card-bg p-4">
+            <div class="h-44 md:h-56 flex items-center justify-center bg-gradient-to-br from-black/20 to-black/10 rounded">
+              <div id="carousel-title" class="text-center">
+                <div class="font-bold" id="battle-name">Second Battle of Varcia</div>
+                <div class="text-xs text-gray-400">Result: Win</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 flex justify-between">
+            <button id="prev" class="px-3 py-1 rounded border border-gray-700">❮</button>
+            <button id="next" class="px-3 py-1 rounded border border-gray-700">❯</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+ <section id="gallery" class="max-w-6xl mx-auto px-6 py-8">
+        <h2 class="text-2xl font-bold">Gallery</h2>
+        <p class="text-gray-400 mt-2">A collection of moments from our operations and community events.</p>
+        <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="aspect-video bg-cover bg-center rounded-lg cursor-pointer hover:scale-105 transition-transform duration-200" style="background-image: url('images/Captura%20desde%202025-09-27%2019-50-39.png')"></div>
+        <div class="aspect-video bg-cover bg-center rounded-lg cursor-pointer hover:scale-105 transition-transform duration-200" style="background-image: url('images/Captura%20desde%202025-09-27%2020-37-48.png')"></div>
+        <div class="aspect-video bg-cover bg-center rounded-lg cursor-pointer hover:scale-105 transition-transform duration-200" style="background-image: url('images/Captura%20desde%202025-09-29%2021-02-45.png')"></div>
+        <div class="aspect-video bg-cover bg-center rounded-lg cursor-pointer hover:scale-105 transition-transform duration-200" style="background-image: url('images/RobloxScreenShot20251009_200250953.png')"></div>
+        </div>
+    </section>
+    <section id="faq" class="max-w-6xl mx-auto px-6 py-8">
+      <h2 class="text-2xl font-bold">FAQ</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="card-bg p-4 rounded">
+          <h4 class="font-semibold">What are the requirements to join?</h4>
+          <p class="text-sm text-gray-300 mt-2">Requirements vary by division. Some require tryouts, others applications. Check each division page or ask recruitment staff.</p>
+        </div>
+        <div class="card-bg p-4 rounded">
+          <h4 class="font-semibold">What training is provided?</h4>
+          <p class="text-sm text-gray-300 mt-2">Basic training, role-based drills, and specialist courses are run by NTC and division commands.</p>
+        </div>
+        <div class="card-bg p-4 rounded">
+          <h4 class="font-semibold">How do I rank up?</h4>
+          <p class="text-sm text-gray-300 mt-2">Promotions are based on merit, time served, activity and recommendations from your superiors.</p>
+        </div>
+        <div class="card-bg p-4 rounded">
+          <h4 class="font-semibold">How to report exploiters?</h4>
+          <p class="text-sm text-gray-300 mt-2">Collect evidence, contact moderators via the Justice Department server, and call a modcall if needed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-8">
+      <h2 class="text-2xl font-bold">Rules & Discipline</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="card-bg p-4 rounded">
+          <h4 class="font-semibold">General Conduct</h4>
+          <ul class="text-sm text-gray-300 mt-2 list-disc pl-5">
+            <li>No spam or purposefully clogging channels.</li>
+            <li>No NSFW/NSFL content — immediate ban.</li>
+            <li>No hateful slurs (racial, homophobic, transphobic). Certain soft uses are still discouraged.</li>
+            <li>No doxxing, swatting, DDoS, or illegal activities.</li>
+          </ul>
+        </div>
+        <div class="card-bg p-4 rounded">
+          <h4 class="font-semibold">Uniforms & Etiquette</h4>
+          <p class="text-sm text-gray-300 mt-2">Combat uniforms are used for trainings and operations; formals have stricter requirements. Accessories should follow the Cold War / 1960s aesthetic where possible.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-12 border-t border-gray-800">
+  <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-start gap-6" style="border-top: 4px solid var(--yellow); background: linear-gradient(90deg, var(--blue) 0%, var(--yellow) 60%, var(--green) 100%);">
+        <div>
+          <div class="font-bold">Noobic Stratocracy</div>
+          <div class="text-sm text-gray-400 mt-2">East Noobia — The state where discipline meets community.</div>
+        </div>
+        <div class="text-sm text-gray-400">
+          <div>Contact: placeholder@placeholder.placeholder</div>
+          <div class="mt-2">Discord: dipstick. — <a class="text-amber-400" href="#">discord.gg/noobia</a></div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.getElementById('mobile-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', ()=> menu.classList.toggle('hidden'));
+
+    // Carousel data
+    const battles = [
+      {name: 'Second Battle of Varcia', result: 'Win'},
+      {name: '3nd vs Gregpire & 98th', result: 'Win'},
+      {name: 'Battle of Geonosis', result: 'Win'},
+      {name: '3nd vs HFC @ Nardan Atoll', result: 'Win'},
+      {name: 'The 4 Hour War', result: 'Win'},
+      {name: '3nd vs CSC', result: 'Win'}
+    ];
+    let idx = 0;
+    const titleEl = document.getElementById('battle-name');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    function render(){
+      const b = battles[idx];
+      titleEl.textContent = b.name + ' — ' + b.result;
+    }
+    prev.addEventListener('click', ()=>{ idx = (idx-1 + battles.length)%battles.length; render(); });
+    next.addEventListener('click', ()=>{ idx = (idx+1)%battles.length; render(); });
+    render();
+  </script>
+</body>
+</html>
